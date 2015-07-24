@@ -2,22 +2,34 @@
 <html>
 
 	<head>
-		<title>MONEY TRACKERZ for ICS491</font></title>
+		
+		<!-- title for tab on web broswer -->
+		<title>MONEY TRACKERZ for ICS491</title>
 
+		<!-- link to the css file called main.css-->
 		<link href="main.css" rel="stylesheet" type="text/css" />
+
 
 	</head>
 		<header>
 			<h1>
+				<!-- This is header1 -->
 				<center><strong><font size="6"face="verdana" color="white">Welcome to the MONEYTRACKERZ</strong></font></center>
 			</h1>
-			<!-- This is the header-->
+			<!-- This is the header1 closed-->
+			
+
 			<h2>
 				<br>
-
+				<!-- This is header2 just to add white scent on background-->
 			</h2>	
+
+		<!-- closing header section-->
 		</header>
 
+
+
+		<!-- start of body-->
 	<body>
 
 		<p><center><br>This application allows the user to add money and apply to to two different functions.</center> 
@@ -29,18 +41,43 @@
 			<p><li>Lorg Term: Allows you to do basic long term goals that uses interestes by the chosen set of years and inflation of current money.</li>
 		</ul>
 
+		<br><br> <!-- line breaks -->
+
+
+		<!-- login section -->
+		<center>
+		<section class="loginform cf">
+		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+    		<ul>
+        	<li><label for="User">User</label>
+        	<input type="user" name="user" placeholder="Username" required></li>
+        	<li><label for="password">Password</label>
+        	<input type="password" name="password" placeholder="password" required></li>
+        	<li>
+        	<input type="submit" value="Login"></li>
+    	</ul>
+		</form>
+		</section>
+		</center>
+
+		<br><br>
+
 		<br><center><img src="https://s-media-cache-ak0.pinimg.com/236x/60/52/fc/6052fcff7faec7da54d4118b331f1628.jpg"></center> 	
 		<!--image of our logo -->
 		
 		<br><br><br>
 		<!--line breaks -->
 		
+
+		<!-- bottom footer1 -->
 		<center>This application is 100% supported by the UHMANOA ICS <strong>LizardSquad</strong></center><br>
 		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
 
+		<!-- bottom footer2 with links to lizardsquad & UH manoa-->
 		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
 
-
+		<!-- close body-->
 	</body>
 
+<!-- close html-->
 </html>
