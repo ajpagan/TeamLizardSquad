@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>MONEY TRACKERZ for ICS491</font></title>
+
+		<link href="main.css" rel="stylesheet" type="text/css" />
+
+	</head>
+		<header>
+			<h1>
+				<center><strong><font size="6"face="verdana" color="white">Welcome to the MONEYTRACKERZ</strong></font></center>
+			</h1>
+			<!-- This is the header-->
+			<h2>
+				<br>
+
+			</h2>	
+		</header>
+
+	<body>
+
+		<p><center><br>This application allows the user to add money and apply to to two different functions.</center> 
+			<!--about app -->
+
+		<ul> 	
+			<!--shows clients the options they have -->
+			<p><li>Short Term: Allows you to do basic addition and subtractions for billing expenses by days, weeks, or months.</li>
+			<p><li>Lorg Term: Allows you to do basic long term goals that uses interestes by the chosen set of years and inflation of current money.</li>
+		</ul>
+
+		<br><center><img src="https://s-media-cache-ak0.pinimg.com/236x/60/52/fc/6052fcff7faec7da54d4118b331f1628.jpg"></center> 	
+		<!--image of our logo -->
+		
+		<br><br><br>
+		<!--line breaks -->
+		
+		<center>This application is 100% supported by the UHMANOA ICS <strong>LizardSquad</strong></center><br>
+		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
+
+		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
+
+
+	</body>
+
+</html>
