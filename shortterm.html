@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+	<head>
+		
+		<!-- title for tab on web broswer -->
+		<title>MONEY TRACKERZ short term</title>
+
+		<!-- link to the css file called main.css-->
+		<link href="main.css" rel="stylesheet" type="text/css" />
+
+
+	</head>
+		<header>
+			<h1>
+				<!-- This is header1 -->
+				<center><strong><font size="6"face="verdana" color="white">Short Term Function!</strong></font></center>
+			</h1>
+			<!-- This is the header1 closed-->
+			
+
+			<h2>
+				<br>
+				<!-- This is header2 just to add white scent on background-->
+			</h2>	
+
+		<!-- closing header section-->
+		</header>
+
+
+
+		<!-- start of body-->
+	<body>
+
+		<p><center><br>Thank you for chosing the short term function.</center> 
+			<!--about app -->
+
+		
+		<br><br>
+
+		<center><font size="6">Directions</font></center>
+
+
+		<center>
+			<ul> 	
+			<!--expalins in detail what this function does!-->
+				<p><li>Saving Function: This will show the user how long it would take for them to reach a certain value with the money they have on a monthly bases.
+
+						<center>
+								<!-- button to click on -->
+						<br><button onclick="myFunctionGoal()">Try the Saving Function</button><br>
+
+								<p5 id="goaldemo"></p5>
+
+							
+								<!-- javascript -->
+								<script>
+
+
+								function myFunctionGoal() {
+								    var goal = prompt("Please enter your monetary goal: ", "10000.00");
+								    //storing in goals
+
+								var savings = prompt("Please enter how much money you plan to save a month:", "100.00")
+									//storing in savings
+
+								var yearGoal = parseInt(goal/savings/12); 	//int for year
+								var monthGoal = goal/savings%12; 			//mod for remainder month
+								    
+								    if (goal != null && savings != null) {
+								        document.getElementById("goaldemo").innerHTML =
+								        "<br>Your Goal is: $" + goal + "<br>Your Montly Savings: $" + savings + "<br><br>It will take you " + yearGoal + " years and " + monthGoal +" months to reach your goal!<br>";  //output 
+								    }
+								}
+
+								</script>
+							<!-- ends javascript -->
+
+							</center>
+
+				</li>
+			
+				<p><li>Pay Off Debt Function: This will show the user how long it would take for them to pay off a certain debt with the money they have on a monthly bases.
+
+						<center>
+							<!-- button to try with -->
+						<br><button onclick="myFunctionDebt()">Try the Debt Function</button><br>
+
+							<p6 id="debtdemo"></p6>
+
+								<!-- javascript -->
+
+								<script>
+									function myFunctionDebt() {
+									    var moneyDebt = prompt("Please enter your monthly payments: ", "100.00"); //storing in money
+									    var debt = prompt("Please enter how much debt you are in: ","2500.0") //storing in debt
+									    
+									    var yearlyDebt = parseInt(debt/moneyDebt/12); 								//int for year compute
+										var monthlyDebt = debt/moneyDebt%12;											//mod for remainder month
+									  
+									  
+									    if (moneyDebt != null && debt != null) {
+									        document.getElementById("debtdemo").innerHTML =
+													"<br>Monthly Payments: $" + moneyDebt + "<br>Totaly Amount of Debt: $" + debt + "<br><br>It will take you " + yearlyDebt + " years and "+ monthlyDebt +" months to pay off your debt.<br><br>Assuming no more debt is accumlated.<br>";} //output
+														
+															}
+								</script>
+						<!-- ends javascript-->
+
+
+						</center>
+				</li>
+			</ul>
+
+		</center>
+
+		<br><br> <!-- line breaks -->
+
+
+
+		<br><center><img src="https://s-media-cache-ak0.pinimg.com/236x/60/52/fc/6052fcff7faec7da54d4118b331f1628.jpg"></center> 	
+		<!--image of our logo -->
+		
+		<br><br><br>
+		<!--line breaks -->
+		
+
+		<!-- bottom footer1 -->
+		<center>This application is 100% supported by the UHMANOA ICS <strong>LizardSquad</strong></center><br>
+		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
+
+		<!-- bottom footer2 with links to lizardsquad & UH manoa-->
+		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
+
+		<!-- close body-->
+	</body>
+
+<!-- close html-->
+</html>
