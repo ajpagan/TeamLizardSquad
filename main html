@@ -37,11 +37,13 @@
 
 		<ul> 	
 			<!--shows clients the options they have -->
-			<p><li>Short Term: Allows you to do basic addition and subtractions for billing expenses by days, weeks, or months.</li>
-			<p><li>Lorg Term: Allows you to do basic long term goals that uses interestes by the chosen set of years and inflation of current money.</li>
+			<p><li><a href="shortterm.html">Short Term</a>: Allows you to do basic addition and subtractions for billing expenses by days, weeks, or months.</li>
+			<p><li><a href="longterm.html">Lorg Term</a>: Allows you to do basic long term goals that uses interestes by the chosen set of years and inflation of current money.</li>
 		</ul>
 
 		<br><br> <!-- line breaks -->
+
+
 
 
 		<!-- login section -->
