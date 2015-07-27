@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+	<head>
+		
+		<!-- title for tab on web broswer -->
+		<title>MONEY TRACKERZ long term</title>
+
+		<!-- link to the css file called main.css-->
+		<link href="main.css" rel="stylesheet" type="text/css" />
+
+
+	</head>
+		<header>
+			<h1>
+				<!-- This is header1 -->
+				<center><strong><font size="6"face="verdana" color="white">Long Term Function!</strong></font></center>
+			</h1>
+			<!-- This is the header1 closed-->
+			
+
+			<h2>
+				<br>
+				<!-- This is header2 just to add white scent on background-->
+			</h2>	
+
+		<!-- closing header section-->
+		</header>
+
+
+
+		<!-- start of body-->
+	<body>
+
+		<p><center><br>Thank you for chosing the long term function.</center> 
+			<!--about app -->
+
+		
+		<br><br>
+
+		<center><font size="12">Directions!</font></center>
+
+		<ul> 	
+			<!--expalins in detail what this function does!-->
+			<p><li>Inflation Option: This will allow the user to see how much their money will inflate over so many years The user will pick the principle, inflation rate, and the amount of years it will take.
+
+				<center>
+
+					<!-- button to click on-->
+				<br><button onclick="myFunction1()">Try the Inflation Function</button><br><br>
+				
+
+
+				<p3 id="demo1"></p3>
+
+					<!-- javascript -->
+						<script>
+
+							function myFunction1() {
+    						var moneyInflate = prompt("Please enter your starting principle:", "1000.00"); //storing in money
+    						var inflate = prompt("Please enter the inflation rate:","2.0") 			//storing in inflate
+    						var timeInflate = prompt("Please enter the amount of years to inflate:","5") 	//storing in time
+
+    						var inflatedTotal = moneyInflate * (inflate/100) * timeInflate; //computing inflation
+  
+  								
+    							if (moneyInflate != null && inflate != null && timeInflate != null) {
+        							document.getElementById("demo1").innerHTML =
+									 "Priniciple: $" + moneyInflate + "<br>Inflation Rate: " + inflate + "%<br>Alloted Time: " + timeInflate + " Years<br><br>Your money will inflate by $"+ inflatedTotal + " over " + timeInflate + " years." + "<br>"+"*Assuming constant rate increase.*"; 
+																					} //output
+
+										}
+
+						</script>
+						<!-- ends javascript-->
+
+
+					</center>
+				</li>
+				
+
+			<p><li>Interest Option: This will allow the user to apply interest to their money over an alloted amount of time. The User will pick the Principle, the Interest rate, and the time it will take.
+				<center>
+
+						<!-- button to click on-->
+				<br><button onclick="myFunction2()">Try the Interest Function</button><br><br>
+				
+
+						<p4 id="demo2"></p4>
+
+					<!-- javascript -->
+						<script>
+
+
+						function myFunction2() {
+   					 	var moneyInterest = prompt("Please enter your money you wish to gain interest on:", "1000.00"); //stores in money
+    					var interest = prompt("Please enter your interest:", "5.0"); //stores in interest
+    					var timeInterest = prompt("Please enter how many months:", "12"); //stores in time
+
+    					var interestTotal = moneyInterest * (interest/100) * timeInterest/12; //compute total interest
+
+    							if (moneyInterest != null && interest != null && timeInterest != null) {
+        						document.getElementById("demo2").innerHTML =
+        						"Principle: $" + moneyInterest + "<br>Interest Rate: " + interest + "%<br>Alloted Time: " + timeInterest + "months<br><br>" + "Your money created $"+ interestTotal + " of interest over " + timeInterest +" months!";
+    																					} //output
+											}
+						</script>
+						<!-- ends javascript-->
+
+					</center>
+				</li>
+		</ul>
+		
+		
+		<br><br> <!-- line breaks -->
+
+
+
+		<br><br><center><img src="https://s-media-cache-ak0.pinimg.com/236x/60/52/fc/6052fcff7faec7da54d4118b331f1628.jpg"></center> 	
+		<!--image of our logo -->
+		
+		<br><br><br>
+		<!--line breaks -->
+		
+
+		<!-- bottom footer1 -->
+		<center>This application is 100% supported by the UHMANOA ICS <strong>LizardSquad</strong></center><br>
+		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
+
+		<!-- bottom footer2 with links to lizardsquad & UH manoa-->
+		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
+
+		<!-- close body-->
+	</body>
+
+<!-- close html-->
+</html>
