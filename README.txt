@@ -16,3 +16,13 @@ will take to pay off a certain debt.
 Long Term functions will be the second type of user functions. This will show the inflation
 of the users money for a fixed amount of years. The interest option will show the user how much 
 is gained over a fixed amount of years. 
+
+Team Meeting # 2
+July 31 2015
+Sinclair Library
+
+Team Decided to test program with:
+1) Buffer Overflow
+2) Integer Overflow
+3) Type Mismatch 
+3)
