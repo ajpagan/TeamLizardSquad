@@ -25,4 +25,6 @@ Team Decided to test program with:
 1) Buffer Overflow
 2) Integer Overflow
 3) Type Mismatch 
-3)
+
+Team discussed the report further and agreed on what eachother should work on.  
+
