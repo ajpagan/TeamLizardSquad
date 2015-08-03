@@ -50,26 +50,6 @@
 
 		</ul>
 
-		<br><br> <!-- line breaks -->
-
-
-
-
-		<!-- login section -->
-		<center>
-		<section class="loginform cf">
-		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
-    		<ul>
-        	<li><label for="User">User</label>
-        	<input type="user" name="user" placeholder="Username" required></li>
-        	<li><label for="password">Password</label>
-        	<input type="password" name="password" placeholder="password" required></li>
-        	<li>
-        	<input type="submit" value="Login"></li>
-    	</ul>
-		</form>
-		</section>
-		</center>
 
 		<br><br>
 
@@ -83,6 +63,9 @@
 		<!-- bottom footer1 -->
 		<center>This application is 100% supported by the UHMANOA ICS <strong>LizardSquad</strong></center><br>
 		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
+
+		<br><br>
+		<center><a href="main.html">Log Out</a></center>
 
 		<!-- bottom footer2 with links to lizardsquad & UH manoa-->
 		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
