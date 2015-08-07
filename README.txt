@@ -26,5 +26,14 @@ Team Decided to test program with:
 2) Integer Overflow
 3) Type Mismatch 
 
+Team Meeting # 3 
+August 7 2015
+Sinclair Library
+
+Team decided to meet and work on assignment #5
+Garry & Allen are working on the report
+Chad is running test on the code 
+Disscussing ideas for the wiki pages
+
 Team discussed the report further and agreed on what eachother should work on.  
 
