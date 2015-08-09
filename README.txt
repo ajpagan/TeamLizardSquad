@@ -37,3 +37,6 @@ Disscussing ideas for the wiki pages
 
 Team discussed the report further and agreed on what eachother should work on.  
 
+The team also has a localhost set up for the database that allows the webpage to check if the username and the passwords.
+The passwors are encrypted with md5 so it will not be in cleartext if someone was to check into it.
+
