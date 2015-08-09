@@ -65,8 +65,9 @@
 		<center>** This application webpage is not for real use. This is just a class project. SORRY :( **</strong></center><br>
 
 		<br><br>
-		<center><a href="main.html">Log Out</a></center>
+		<center><a href="login.html">Log Out</a></center>
 
+		<br><br>
 		<!-- bottom footer2 with links to lizardsquad & UH manoa-->
 		<footer><center><font size="1" color="white"> @ <a href="https://en.wikipedia.org/wiki/Lizard_Squad">LizardSquad </a> <a href="http://www.ics.hawaii.edu">ICS UHMANOA ICS2015</a></font></center></footer>
 
