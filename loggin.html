@@ -37,24 +37,39 @@
 		
 		<br><br>
 		
-		<form action="loggingin.php" method="POST">
-		<center>
-			Username: <input name="username" type="text"><br>
-			Password: <input name="password" type="text"><br><br>
-			<input name="submit" value="Login" type="Submit">
-
-		</center>
-		</form>
-
-
-		<br><br><center><a href="registration.html"> Need to Registrate? </a></center>
+		<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+				<tr>
+					<!-- This will send this login to check with the database after submit-->
+					<form name="form1" method="post" action="checklogin.php">
+						<td>
+							<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+							<tr>
+							<td colspan="3"><strong><center>Member Login </center></strong></td>
+							</tr>
+							<tr>
+							<center>	
+							<td width="78">Username</td>
+							<td width="6">:</td>
+							<td width="294"><input name="myusername" type="text" id="myusername"></td>
+							</center>
+							</tr>
+							<tr>
+							<td>Password</td>
+							<td>:</td>
+							<td><input name="mypassword" type="text" id="mypassword"></td>
+							</tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><input type="submit" name="Submit" value="Login"></td>
+							</tr>
+						</table>
+						</td>
+					</form>
+				</tr>
+				</table>
 		
-
-
 		<br>
-		
-		
-		<!--Registration Page -->
 
 		<br><br>
 
