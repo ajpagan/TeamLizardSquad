@@ -1,1 +1,204 @@
+Table of Contents
+I. Abstract
+Background Information on Project MoneyTrackerz …… 2
+II. Requirements
+Establish Security Requirements ..............2
+Create Quality Gates/Bug Bars........................3
+Security / Privacy Risk Assessments.........................5
+III. Design
+Establish Requirement Designs ......................7
+Perform Attack Surface Analysis/Reduction ..........8
+Threat Model.................................................................9
+Summary / Conclusion.........................9
+IV. Implementation
+ Approved Tools...................................10
+ Deprecated /Unsafe Functions..........................10
+ Static Analysis Tool..................................................................11
+ V. Verification
+ Dynamic Analysis........................................14
+ Fuzz Testing.............................................15
+ Attack Surface Review.......................16
+VI. Release
 
+ Incident Response Plan.....................................................16
+ Final Security Review................................17
+ Certify Release and Archive................18
+ 
+ I. Abstract
+ 
+Background:
+
+Our program will be a money-tracker. It will be able to track multiple clients and their
+personal finances. With this we will have a login and password. The password should be at least
+10 characters with capital letters and special symbols included. We will also implement a feature
+that will require you to re-login after 15mins. This will protect against someone else social
+engineering their way past the login. The password will also have to be changed every 60 days to
+continue to keep their security up.
+
+User information will be backed up in a database. We will use First name, middle initial,
+last name, birthday, gender, login, password and two emails as user information. After inserting
+money into the application it will also be stored in another database separate from the user
+information. The application will have a total amount of money that is enrolled in the
+application. Also, it will have a budget tracker that can be used for short term or long term based
+on the user’s decision. Spending debts will also be shown. Current income and money
+subtractions will be an option as well too.
+
+II. Requirements
+
+Establishing Security Requirements:
+
+Since the program we are developing is going to be a web-based application there will be
+necessary security requirements to fulfill in order to best protect the program from being
+compromised. Our program will be able to track multiple clients and their personal
+finances. Users will need to log in using their password and for security reasons we will also
+implement a feature that will require you to re-login after 15 minutes. Another security
+requirement would be verification of users since all their financial information would be
+compromised if someone hacked their account. There will be information associated with user
+accounts so that users will not be able to access information/content that their not authorized
+to. There will also be security around the database to insure its integrity.
+To go along with security there will also need to be requirements for privacy. Some of
+the requirements shall include data protection since all user information will be backed up in a
+database. There will also need to be data management and access control so that user
+information won’t become compromised. Finally we would need to keep the database secure so
+that information stored in the database can’t be seen or altered by outside parties.
+In order for the developers, team Lizard Squad to keep track of security flaws throughout
+the development process we will keep note of flaws we see and discuss further how to fix the
+problem. Every time we finish a functionality (like logging in, or updating the balance) we will
+test that functionality, and then test the whole system with the functionality integrated.
+
+Privacy/Security Bug Bar:
+
+Critical Privacy
+  Lack of data protection of sensitive info (account balance, log-in info, etc.)
+  Sensitive info in cookie is not encrypted
+  Lack of data management and access control sensitive info is shared, etc.)
+  
+Security
+   No user should be able to gain privileges beyond of what they're authorized
+   
+Important Privacy
+    Lack of user control over account(what non-sensitive info is shared)
+    Lack of notification over what changes are made to the client
+    Lack of data protection of non-sensitive info
+    Non-sensitive personal data on a cookie is not encrypted
+    Log-in sessions have no time limit of inactivity
+    
+Security
+
+    Denial of service: Causing any sort of extended period of down time
+    Targeted information disclosure from anywhere on the system
+    Spoofing
+    Unauthorized modification of databases
+    Bypassing any sort of security measure implemented (authorization log-in)
+    
+Moderate/Low Privacy
+    User data is stored without any means of removing the data by the user
+    Temporarily stored data has no defense mechanisms against unauthorized access
+    User is not opted to change his/her password every 60 days
+
+Security
+    Denial of service: Temporary disruptions
+    Targeted information disclosure from known locations on the system
+    System or user data cannot be tampered with outside of what is authorized by the system
+
+Security/Privacy Risk Assessments:
+
+
+Project Name: MoneyTrackerz
+Design Company: Lizard Squad
+Release Date: 8/1/2016
+Privacy Contacts
+    Chad Patolo, Primary source of contact
+    Garry Hwang, Secondary source of contact
+    Allen Pagan, Secondary source of contact
+
+Privacy Impact
+Rating
+P1
+    Stores information that can be traced to the user
+    Login and Password is saved to quick login
+    Finances is recorded and saved
+    Spending habits and debts will be recorded
+    Application can be used for multiple clients
+
+P2
+    Information is linked through an Email
+    Will show total money that is enrolled in application
+    Budget tracking will be recorded
+    Virtual Money will be upload and remembered by the application
+    
+Privacy Analysis P1 / P2
+User information will be stored in a database via SQL
+Up to date firewall and security will be required to ensure safety for the user.
+Users will be able to interact with the application via website
+Organizations and Individual Users can adjust the application by choosing the short term or long term options.
+
+This will about the application to understand the User’s mindset.
+Any breach of privacy and or information done toward the user
+and or the organization will be prevented by ensuring the user has
+their own security on their computer, creating a strong passcode
+and login and requiring it to be updated every new month, the
+database will be secured along with the website that is the
+information. Authentication will also need to be provided by both
+parties prior to revealing any information.
+ Software will also be kept up to date and SSL protocol will be
+used for extra security.
+
+III. Design
+Design Requirements:
+
+Since the program we are developing is going to be a web-based application there will be
+necessary security requirements and privacy requirements to fulfill in order to best protect the
+program from being compromised. In order to be able to track multiple clients and their
+personal finances users will need to log in using their password that shall be at least 10
+characters that will include at least 1 capital letter and 1 special character. Users will have to relogin
+after 15 minutes after going inactive in order to prevent someone from trying to get around
+the login and password. Another element of security requirement is the verification of the user
+since all their financial information would be compromised if someone hacked their account. To
+prevent this we shall use name, middle initial, last name, birthdate, gender, login, password and
+two emails provided by the user as the user information. The password information for each user
+will need to be changed every 60 days to continue to keep their security up. We will be using a
+database to back up and store the user’s login information as well as their financial information.
+There will be additional information attached to user accounts defining their levels of
+security to determine what typical users can and cannot access. The only users that will have
+access to the sensitive information/database shall be the administrators however they will not be
+able to alter any database information.
+
+Privilege Levels:
+Our program will have two privilege levels: the user level, and the admin level.
+
+User Level: Will have access to user's own balance, control over personal information (sensitive and non-sensitive), controls for adjusting balance (inputting transactions, income, etc.),
+controls for user's own account information (passwords, emails, etc.)
+
+Admin Level: Will have access to all user's accounts and all of the user level capabilities, ability to send out site wide notices
+
+Attack Surface Analysis/Reduction:
+Attackable points of entry:
+· Login/Authentication page
+· Data entry forms (Creating an account, updating balance, inputting transactions)
+· HTTP headers and cookies
+· Search entry (admin level - looking up user accounts)
+
+As this will be the first version of our program, the above is a very general attack surface
+overview of what our web app may be vulnerable to. Since there is a very limited number
+functionalities in the first version of the app, the attack surface is may seem lower. However, the
+number of vulnerabilities associated with each attackable point greatly increases the
+vulnerabilities the app. For instance, any sort of input that the app takes in is vulnerable to
+injection attacks. To secure the app against injections, the app will need to filter all input. A
+framework should be implemented to reduce the number of vulnerabilities in exploiting session
+id's. Any sort of token or flag should be implemented and encrypted on a cookie to further secure
+against session hijacking attacks. These flags and tokens will also serve to guard against CSRF,
+and secure cookies even further.
+
+Threat Model:
+
+Our Threat Model is designed to allow us to see where a possible threat would exist.
+Hackers are able to attack us at logins and at databases. They could be able to hack into our
+databases and steal information that would be harmful to the user and the company. Also the
+login could be a threat if someone is imposing as another user.
+
+Summary:
+In conclusion, The Lizard Squad Incorporation will support this project 100%.
+We believe that not only will this web app bring us great success monetarily, but it will be
+greatly successful with its users as well. Users will be able to learn how to properly and wisely use their money in both
+short term situations and long term situations
